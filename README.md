@@ -1,14 +1,14 @@
-Hướng dẫn upload source code từ local lên CPanel:
+# Hướng dẫn upload source code từ local lên CPanel:
 
-1. Phía Local thì sẽ upload 2 phần là db (database) và source code:
+### 1. Local host (XAMPP)
 
-    A. Database:
+    ###### A. Database:
      Vào http://localhost/phpmyadmin, chọn tên database mà bạn sử dụng chọn Wordpress, chọn Tab Export -> Nhấn Go để save file.
 
-    Lưu ý: Đa số các cài đặt máy chủ XAMPP sẽ có mặc định quyền user là root và password là rỗng: '', nên khi upload source code nào lên server chúng ta sẽ phải thay đổi lại.
+    Lưu ý: Đa số các cài đặt trên máy chủ XAMPP trên local sẽ có mặc định quyền root và password là rỗng nên khi upload source code nào lên server chúng ta sẽ phải thay đổi các thông số này.
 
-    -> wp-config.php file trên local host:
-
+    > wp-config.php
+    
     ....................
 
     define( 'FS_METHOD', 'direct' );
@@ -32,7 +32,7 @@ Hướng dẫn upload source code từ local lên CPanel:
     B. Source code.
     Các bạn vào thư mực htdocs và nén lại tất cả các tập tin, (có thể dưới dạng *.zip)
     
-2. Phía Cpanel thì chúng ta thực hiện các bước sau:
+### 2. CPanel 
     A. Tạo database trùng tên với database dưới local.
     B. Upload database từ local vô máy chủ phpadmin của Cpanel.
     C. Tạo username và password sử dụng cho database, phần (*) mình đã đề cập ở trên.
