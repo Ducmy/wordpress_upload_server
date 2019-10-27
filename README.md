@@ -58,5 +58,20 @@ wp-config.php
     Tham khảo cách dùng như sau.
     https://stackoverflow.com/questions/9764722/why-does-my-page-redirect-to-localhost-in-my-wordpress-blog
     
+# Hướng dẫn download source code từ CPanel về Local để test Wordpress.
+
+Sửa lại các thông số username và password:
+- Username: root
+- Password: (rỗng)
     
-    
+ >    /** MySQL database username */
+>   define( 'DB_USER', 'root' );
+
+>  /** MySQL database password */
+>  define( 'DB_PASSWORD', '' );
+
+Sửa lại máy chủ local trên database: 
+
+> http://localhost/<ten_blog>
+
+Đăng nhập vào tài khoản Wordpress và thiết lập Permalink Settings -> Chọn Post name -> Save (ở bước này mình nghĩ là Bug của Wordpress vì nếu không thiết lập thì các trang Permalink sẽ không được thiết lập về local mà vẫn giữ nguyên URL của website.
