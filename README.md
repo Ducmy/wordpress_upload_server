@@ -54,6 +54,11 @@ Hướng dẫn upload source code từ local lên CPanel:
     /** MySQL hostname */
     define( 'DB_HOST', 'localhost' );
     
+    F. Tiến hành sửa về các thông số Login trên Datbase.
+    Mặc định thì trong source code của máy chủ Local thì nó sẽ được thiết lập là Local Host, vì vậy nếu khi đăng nhập website 
+    thì redirect qua trang local, 
+    Vào trang quản trị Database-> chọn database -> chọn wp-login sửa các đường dẫn về tên miền chúng ta thiết lập
+    https://stackoverflow.com/questions/9764722/why-does-my-page-redirect-to-localhost-in-my-wordpress-blog
     
     
     
