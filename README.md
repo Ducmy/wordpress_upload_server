@@ -65,13 +65,18 @@ Sửa lại các thông số username và password:
 - Password: (rỗng)
     
  >    /** MySQL database username */
+ 
 >   define( 'DB_USER', 'root' );
 
 >  /** MySQL database password */
+
 >  define( 'DB_PASSWORD', '' );
 
 Sửa lại máy chủ local trên database: 
 
 > http://localhost/<ten_blog>
 
-Đăng nhập vào tài khoản Wordpress và thiết lập Permalink Settings -> Chọn Post name -> Save (ở bước này mình nghĩ là Bug của Wordpress vì nếu không thiết lập thì các trang Permalink sẽ không được thiết lập về local mà vẫn giữ nguyên URL của website.
+     >> Đăng nhập vào tài khoản Wordpress và thiết lập Permalink Settings -> Chọn Post name -> Save (ở bước này mình nghĩ là Bug của Wordpress vì nếu không thiết lập thì các trang Permalink sẽ không được thiết lập về local mà vẫn giữ nguyên URL của website.
+     
+### Lời kết:
+ Ở bài này mình đã hướng dẫn các bạn thiết lập Wordpress để có thể làm việc ở 2 phía Local và CPanel. Trong dự án thực tế thì đa số các bạn đều tạo máy chủ local trên XAMPP và sau đó up lên phía server. Hy vọng bài viết này sẽ giúp các bạn thiết lập một website cho riêng mình sử dụng Wordpress.
